@@ -1,9 +1,11 @@
 import Header from './components/Header';
+import Button from './components/Button';
+
 // import Banner from './components/Banner';
 
 function App() {
 let title = 'Revolve';
-// let isLoggedIn = false;
+let isLoggedIn = false;
 
 const navLinks = [
   { index: 0, name: 'About us', url: 'https://'},
