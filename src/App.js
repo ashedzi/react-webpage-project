@@ -5,6 +5,8 @@ import Button from './components/Button';
 
 function App() {
 let title = 'Revolve';
+let heroText = 'Relive the Magic of Movies';
+let heroSubtext = 'Dive into a world of unforgettable stories, iconic characters, and cinematic masterpieces.';
 let isLoggedIn = false;
 
 const navLinks = [
