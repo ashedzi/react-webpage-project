@@ -4,3 +4,40 @@
     width: min(100% - 30px, 1080px );
     margin-inline: auto;
 }
+
+.flex{
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+h1, p, a {
+    color: #fff;
+}
+
+.nav-list nav ul li a{
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        color: #849;
+        transition: color 0.25s ease-in-out;
+    }
+}
+
+header {
+    background-color: rgb(24 23 32 / 5%);
+    height: 60px;
+}
+
+

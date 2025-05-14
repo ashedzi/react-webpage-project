@@ -2,10 +2,14 @@ import Nav from './Nav';
 
 function Header(props) {
     return (
-        <div className="container">
-            <h1>{props.title}</h1>
-            <Nav list={props.navLinks}></Nav>
-        </div>
+        <header>
+            <div className="container flex align-center space-between">
+                <div>
+                    <h1>{props.title}</h1>
+                </div>
+                <Nav list={props.navLinks}></Nav>
+            </div>
+        </header>
     );
 }
 
