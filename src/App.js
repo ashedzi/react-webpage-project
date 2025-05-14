@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import Banner from './components/Banner';
 
 function App() {
+let title = 'Revolve';
+let isLoggedIn = false;
+
+const navLinks = [
+  { index: 0, name: 'About us', url: 'https://'},
+  { index: 0, name: 'About us', url: 'https://'},
+  { index: 0, name: 'About us', url: 'https://'},
+  { index: 0, name: 'About us', url: 'https://'}
+]
+
+const movies = [
+    {
+      id: 1001,
+      title: 'Jurassic Park',
+      poster: 'https://raw.githubusercontent.com/mrspecht/media/main/img/jurassic-park.jpg'
+    },
+    {
+      id: 1002,
+      title: 'The Lion King',
+      poster: 'https://raw.githubusercontent.com/mrspecht/media/main/img/the-lion-king.jpg'
+    },
+    {
+      id: 1003,
+      title: 'Avengers: Infinity War',
+      poster: 'https://raw.githubusercontent.com/mrspecht/media/main/img/avengers-infinity-war.jpg'
+    },
+    {
+      id: 1004,
+      title: 'The Shining',
+      poster: 'https://raw.githubusercontent.com/mrspecht/media/main/img/the-shining.jpg'
+    }
+]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header />
+    <main>
+      <div className='container'>
+        {/* <Banner/> */}
+      </div>
+    </main>
+    <footer></footer>
+    </>
   );
 }
 
