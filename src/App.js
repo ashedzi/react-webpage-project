@@ -43,8 +43,8 @@ const movies = [
     <>
     <Header title={title} navLinks={navLinks}/>
     <main>
-      <div className='container'>
         <Banner heroText={heroText} heroSubtext={heroSubtext} isLoggedIn={isLoggedIn}/>
+      <div className='container'>
         <Gallery list={movies} />
       </div>
     </main>

@@ -1,10 +1,10 @@
-function Footer(props) {
+function Footer() {
     return (
-        <header>
+        <footer>
             <div className="container ">
               <p>2025 &copy; Revolve.com</p>
             </div>
-        </header>
+        </footer>
     );
 }
 
