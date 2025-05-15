@@ -2,7 +2,7 @@
 function Button(props) {
     return (
         <button className={props.isLoggedIn ? 'primary' : 'secondary'}>
-            {props.isLoggedIn ? 'Logout' : 'Login'}
+            {props.isLoggedIn ? 'Login' : 'View movies'}
         </button>
     );
 }
