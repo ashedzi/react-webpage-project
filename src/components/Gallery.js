@@ -1,15 +1,18 @@
 
 function Gallery(props) {
     return (
-        <div className='container'>
-            <div className="movie-list">
-                {props.list.map(movie => (
-                    <div key={movie.index}>
-
-                    </div>
-                ))}
+        <section className="movie-section">
+            <div className='movie-list'>
+                    {props.list.map(movie => (
+                        <div key={movie.id}>
+                            <div className="poster-img">
+                                <img src={movie.poster} className="movie-poster"></img>
+                            </div>
+                            <p>{movie.title}</p>
+                        </div>
+                    ))}
             </div>
-        </div>
+        </section>
     );
 }
 
