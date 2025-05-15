@@ -5,6 +5,16 @@
     margin-inline: auto;
 }
 
+:root {
+    --primary-color: #8A264D;
+    --primary-dark: #6c1a3a;
+}
+
+main {
+    height: 600px;
+    background: #000 url(../img/bg-img.jpg) center center / cover no-repeat;
+}
+
 .flex{
     display: flex;
 }
@@ -16,6 +26,10 @@
 
 .flex-column {
     flex-direction: column;
+}
+
+.gap-16 {
+    gap: 16px;
 }
 
 .align-center {
@@ -45,8 +59,14 @@ h1, p, a {
 }
 
 header {
-    background-color: rgb(255 255 255 / 6%);
+    background-color: rgb(0 0 0 / 10%);
     height: 60px;
+
+    h1 {
+        line-height: 60px;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
 }
 
 button {
@@ -58,36 +78,52 @@ button {
 }
 
 .primary {
-    background-color: #065572;
+    background-color: var(--primary-color);
     color: #fff;
 
     &:hover {
-        background-color: #013143;
+        background-color: var(--primary-dark);
         transition: background-color 0.25s ease-in-out;
     }
 }
 
 .secondary {
-    background-color: #fff;
-    border: 1px solid #065572;
-    color: #065572;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
 
     &:hover {
-        background-color: #f3f4f5;
+        background-color: rgb(255 255 255 / 2%);
         transition: background-color 0.25s ease-in-out;
     }
 }
 
 .hero-section {
-    height: 500px;
+    height: 600px;
 
     h2 {
-        font-size: 4rem;
+        font-size: 6rem;
+        font-weight: 800;
+        /* color:  #fff; */
+        background: linear-gradient(90deg, #8A264D, #D94F70, #F7B2A0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text; /* For newer browsers */
+        color: transparent;
+    }
+
+    p {
+        font-size: 1.8rem;
     }
 
     h2, p {
         text-align: center;
     }
 }
+
+.button-container {
+    margin-top: 24px;
+}
+
 
 

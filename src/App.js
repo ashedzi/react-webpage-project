@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Banner from './components/Banner';
+import Gallery from './components/Gallery';
 
 function App() {
 let title = 'Revolve';
@@ -14,28 +15,28 @@ const navLinks = [
   { index: 3, name: 'Contact us', url: 'https://'}
 ]
 
-// const movies = [
-//     {
-//       id: 1001,
-//       title: 'Jurassic Park',
-//       poster: 'https://raw.githubusercontent.com/mrspecht/media/main/img/jurassic-park.jpg'
-//     },
-//     {
-//       id: 1002,
-//       title: 'The Lion King',
-//       poster: 'https://raw.githubusercontent.com/mrspecht/media/main/img/the-lion-king.jpg'
-//     },
-//     {
-//       id: 1003,
-//       title: 'Avengers: Infinity War',
-//       poster: 'https://raw.githubusercontent.com/mrspecht/media/main/img/avengers-infinity-war.jpg'
-//     },
-//     {
-//       id: 1004,
-//       title: 'The Shining',
-//       poster: 'https://raw.githubusercontent.com/mrspecht/media/main/img/the-shining.jpg'
-//     }
-// ]
+const movies = [
+    {
+      id: 1001,
+      title: 'Jurassic Park',
+      poster: 'https://raw.githubusercontent.com/mrspecht/media/main/img/jurassic-park.jpg'
+    },
+    {
+      id: 1002,
+      title: 'The Lion King',
+      poster: 'https://raw.githubusercontent.com/mrspecht/media/main/img/the-lion-king.jpg'
+    },
+    {
+      id: 1003,
+      title: 'Avengers: Infinity War',
+      poster: 'https://raw.githubusercontent.com/mrspecht/media/main/img/avengers-infinity-war.jpg'
+    },
+    {
+      id: 1004,
+      title: 'The Shining',
+      poster: 'https://raw.githubusercontent.com/mrspecht/media/main/img/the-shining.jpg'
+    }
+]
 
   return (
     <>
@@ -43,6 +44,7 @@ const navLinks = [
     <main>
       <div className='container'>
         <Banner heroText={heroText} heroSubtext={heroSubtext} isLoggedIn={isLoggedIn}/>
+        <Gallery list={movies} />
       </div>
     </main>
     <footer></footer>
