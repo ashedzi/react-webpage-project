@@ -1,7 +1,3 @@
-# My first react project
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 # Revolve
 
 **Revolve** is a simple React web page that showcases a collection of movie posters. It features a clean hero banner, a movie gallery, and a footer — just the basics to help me get started with React!
