@@ -9,6 +9,15 @@
     display: flex;
 }
 
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
 .align-center {
     align-items: center;
 }
@@ -41,9 +50,9 @@ header {
 }
 
 button {
-    padding: 12px 24px;
+    padding: 12px;
     border-radius: 4px;
-    width: 200px;
+    width: 150px;
     font-size: 1.6rem;
     font-weight: 500;
 }
@@ -66,6 +75,18 @@ button {
     &:hover {
         background-color: #f3f4f5;
         transition: background-color 0.25s ease-in-out;
+    }
+}
+
+.hero-section {
+    height: 500px;
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h2, p {
+        text-align: center;
     }
 }
 

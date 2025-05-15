@@ -1,7 +1,5 @@
 import Header from './components/Header';
-import Button from './components/Button';
-
-// import Banner from './components/Banner';
+import Banner from './components/Banner';
 
 function App() {
 let title = 'Revolve';
@@ -44,7 +42,7 @@ const navLinks = [
     <Header title={title} navLinks={navLinks}/>
     <main>
       <div className='container'>
-        {/* <Banner/> */}
+        <Banner heroText={heroText} heroSubtext={heroSubtext} isLoggedIn={isLoggedIn}/>
       </div>
     </main>
     <footer></footer>
