@@ -6,8 +6,12 @@
 }
 
 :root {
-    --primary-color: #7b0901;
-    --primary-dark: #4f0702;
+    --primary-color: #821109;
+    --primary-dark: #610802;
+}
+
+body {
+    background-color: #060407;
 }
 
 main {
@@ -104,16 +108,16 @@ button {
     h2 {
         font-size: 6rem;
         font-weight: 800;
-        /* color:  #fff; */
-        background: linear-gradient(90deg, #4f0803, #a30e03, #F7B2A0);
+        background: linear-gradient(90deg, #770800, #a30e03, #F7B2A0);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-clip: text; /* For newer browsers */
+        background-clip: text;
         color: transparent;
     }
 
     p {
         font-size: 1.8rem;
+        margin-top: 8px;
     }
 
     h2, p {
@@ -122,7 +126,7 @@ button {
 }
 
 .button-container {
-    margin-top: 24px;
+    margin-top: 40px;
 }
 
 .movie-list {
@@ -140,7 +144,6 @@ button {
 }
 
 .movie-list img:hover {
-    /* scale: 1.05; */
     transform: translateY(-4px);
 }
 
@@ -155,7 +158,13 @@ button {
     padding-block: 80px
 }
 
-body {
-    background-color: #060407;
+footer {
+    height: 60px;
+    background-color: #343232;
+    
+    p {
+        text-align: center;
+    }
 }
+
 
